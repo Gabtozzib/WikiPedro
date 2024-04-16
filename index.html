@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiPedro</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">História</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Medidas</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Desejos profundos</a>
+                </li>
+            </ul>
+            <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container_titulo">Fã-Clube Do <b class="container_titulo--negrito">Predo</b></h1>
+        </div>
+
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
+
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe o que quer?</h2>
+        <input type="search" class="banner__pesquisa" placeholder="O que gostaria de saber sobre O Predo?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Fotos Clássicas</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/predo e ana 1.svg"></div>
+                <div class="swiper-slide"><img src="img/predo e gabs 2.svg"></div>
+                <div class="swiper-slide"><img src="img/predo óculos.svg"></div>
+                <div class="swiper-slide"><img src="img/predo masqueico.svg"></div>
+                <div class="swiper-slide"><img src="img/predo flamengo.svg"></div>
+            
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+    <h1> Um pouco sobre Predo...</h1>
+    <p> Pedro é um jovem de 16 anos que, como muitos, tenta levar a própria vida normalmentem, sem se preocupar com o que as pessoas fazem com a sua imagem!
+    </p>
+    <h2> Relacionamentos:</h2>
+    <p> Pedro namora outra jovem chamada Ana Julia há aproximadamente 1 ano e 10 meses. É amigo de Gabriel há pouco mais de 4 anos e é irmão mais novo de outra Ana Julia desde que nasceu. Pedro também possui um irmão mais novo, vulgo Leonardo, porém são raríssimos os registros fotográficos dos dois juntos convivendo como seres racionais. Nas imagens a seguir é possível ver Predo e sua namorada, seu amigo e sua irmã, respectivamente.</p>
+</body><img src="img/predo e ana 2.svg"><img src="img/predo e gabs.svg">
+<img src="img/predo e irma.svg">
+    <h3>Hobbies:</h3>
+    <p> Seu hobbie favorito é possivelmente a pesca. Como prova temos um registro onde ele aparenta estar mais feliz segurando um peixe recém pescado do que nas fotos com sua namorada!
+    </p>
+    <img src="img/predo pescas.svg">
+</html>
